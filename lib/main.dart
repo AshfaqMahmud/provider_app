@@ -4,6 +4,9 @@ import 'package:provider_app/data/models/counter_model.dart';
 import 'package:provider_app/presentation/pages/counter_model_view.dart';
 import 'package:provider_app/presentation/pages/safe_area.dart';
 import 'package:provider_app/presentation/pages/flex_expanded_demo.dart';
+import 'package:provider_app/presentation/pages/cupertino_showcase.dart';
+import 'package:provider_app/presentation/pages/material_showcase.dart';
+import 'package:provider_app/presentation/pages/style_comparison.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,7 +29,10 @@ class MyApp extends StatelessWidget {
             ),
         '/safearea': (context) => const SafeAreaExamplePage(),
         '/flex': (context) => const FlexExpandedDemoPage(),
-      },
+        '/cupertino': (context) => const CupertinoShowcasePage(),
+        '/material': (context) => const MaterialShowcasePage(),
+        '/comparison': (context) => const StyleComparisonPage(),
+       },
     );
   }
 }
